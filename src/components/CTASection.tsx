@@ -18,27 +18,37 @@ const CTASection = () => {
             <div className="flex-1">
               <h2 className="text-xl text-gradient font-lufga uppercase tracking-wider mb-4">University Partnership</h2>
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-montserrat font-extrabold mb-6">
-                Aligned with <span className="text-gradient">Babeș-Bolyai University's</span> research & innovation strategy
+                Aligned with the <span className="text-gradient">world's top universities'</span> research & innovation strategies
               </h3>
               <p className="text-white/70 font-raleway mb-8">
                 Glyph Notes is developed in collaboration with Babeș-Bolyai University, aligning with their research, development and innovation strategy for 2025-2029. This partnership ensures our tools meet the highest academic standards and real educational needs.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-gradient-to-r from-turquoise to-lightblue hover:opacity-90 text-black font-medium">
+              <div className="flex-2 flex-col sm:flex-row gap-4">
+                <Button className="bg-gradient-to-r from-turquoise to-lightblue hover:opacity-90 text-black font-medium mr-2"
+                  onClick={() => {
+                    const encodedEmail = 'Y29udGFjdEB6ZXhzb2Z0LmV1';
+                    const decodedEmail = atob(encodedEmail);
+                    window.location.href = `mailto:${decodedEmail}?subject=Glyph Notes - University enrollment`;
+                  }}>
                   Enroll your university
                 </Button>
-                <Button variant="outline" className="border-white/20 hover:bg-white/5 text-white">
+                <Button variant="outline" className="border-white/20 hover:bg-white/5 text-white"
+                  onClick={() => {
+                    const encodedEmail = 'Y29udGFjdEB6ZXhzb2Z0LmV1';
+                    const decodedEmail = atob(encodedEmail);
+                    window.location.href = `mailto:${decodedEmail}?subject=Glyph Notes - Information for universities`;
+                  }}>
                   Learn More
                 </Button>
               </div>
             </div>
             
             <div className="flex-1 flex justify-center md:justify-end">
-              <div className="glass h-48 w-48 rounded-full flex items-center justify-center">
+              <div className="glass rounded-full flex items-center justify-center" style={{ width: '250px', height: '250px' }}>
                 <img
-                  src="/media/logo.png"
-                  alt="Glyph Notes Logo"
-                  className="w-20 h-20"
+                  src="/media/rankings.png"
+                  alt="QS, THE, Shanghai Rankings Logo"
+                  className="w-full h-full"
                 />
               </div>
             </div>

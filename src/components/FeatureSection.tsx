@@ -1,37 +1,43 @@
 
 import React from 'react';
-import { BookText, Code, PencilRuler, Link, Search } from 'lucide-react';
+import { BookText, Code, PencilRuler, Link, Search, GitGraph } from 'lucide-react';
 
 const features = [
   {
     icon: <BookText className="h-8 w-8 text-turquoise" />,
-    title: "Interactive Block Layout",
-    description: "Jupyter-notebook-like blocks for code, math, geometry, graphs, diagrams, 3D models and more.",
+    title: "Model Anything",
+    description: "Create and manipulate any type of content - from code and math to animations, 3D models, and interactive maps.",
     highlight: "turquoise"
   },
   {
     icon: <Code className="h-8 w-8 text-lightblue" />,
-    title: "Code Execution & Math",
-    description: "Execute code directly in your notes. Visualize mathematical concepts with interactive graphs and 3D models.",
+    title: "Interactive Blocks",
+    description: "Modular blocks that interact with you and each other, enabling dynamic data visualization and real-time updates.",
     highlight: "lightblue"
   },
   {
     icon: <PencilRuler className="h-8 w-8 text-lavender" />,
     title: "Effortless Input",
-    description: "Digital handwriting with ink-to-text, image-to-notebook, and math recognition capabilities.",
+    description: "Advanced AI-powered handwriting recognition and instant digitalization of whiteboards and notebooks through scanning.",
     highlight: "lavender"
   },
   {
     icon: <Link className="h-8 w-8 text-turquoise" />,
     title: "Real-time Collaboration",
-    description: "Work together with teammates, classmates, or colleagues in real-time with integrated commenting and chat.",
+    description: "Enable interactive teaching and cross-border research through seamless real-time collaboration tools.",
     highlight: "turquoise"
   },
   {
     icon: <Search className="h-8 w-8 text-lightblue" />,
-    title: "Knowledge Graph",
-    description: "Link related notes, concepts, and resources to build your personal knowledge graph for better understanding.",
+    title: "Smart Knowledge Graph",
+    description: "Use natural language to find, reference, and cite content from your personal or institutional knowledge base.",
     highlight: "lightblue"
+  },
+  {
+    icon: <GitGraph className="h-8 w-8 text-lavender" />,
+    title: "Hierarchical Organization",
+    description: "Create perfect organization through indented and nested blocks that maintain clear structure and relationships.",
+    highlight: "lavender"
   }
 ];
 
@@ -47,8 +53,8 @@ const FeatureSection = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-xl text-gradient font-lufga uppercase tracking-wider mb-4">Features</h2>
-          <h3 className="text-2xl md:text-3xl lg:text-4xl font-montserrat font-light max-w-2xl mx-auto">
-            Model & interact with <span className="text-gradient font-normal">anything</span>
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-montserrat font-extrabold max-w-2xl mx-auto">
+            Model & interact with <span className="text-gradient font-extrabold">anything</span>
           </h3>
         </div>
         

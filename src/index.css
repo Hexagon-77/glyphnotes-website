@@ -59,7 +59,8 @@
   }
   
   h1, h2, h3 {
-    @apply font-montserrat font-light;
+    @apply font-montserrat font-extrabold;
+    line-height: 0.70;
   }
   
   h4, h5, h6 {

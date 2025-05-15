@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div className="max-w-xs">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/media/logo.png" alt="Glyph Notes Logo" className="w-8 h-8" />
+              <img src="/media/logo.svg" alt="Glyph Notes Logo" className="w-8 h-8" />
               <div className="flex items-center">
                 <span className="text-white text-xl font-raleway font-thin">glyph</span>
                 <span className="text-white text-xl font-montserrat font-semibold ml-1">notes</span>
@@ -26,9 +26,21 @@ const Footer = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             <div>
+              <h4 className="text-white font-lufga mb-4 text-sm">Product</h4>
+              <ul className="space-y-2">
+                <li><a href="https://www.getglyph.eu" className="text-white/60 hover:text-white text-sm transition-colors">Glyph Notes</a></li>
+                <li><a href="#features" className="text-white/60 hover:text-white text-sm transition-colors">Features</a></li>
+                <li><a href="#use-cases" className="text-white/60 hover:text-white text-sm transition-colors">Use cases</a></li>
+                <li><a href="#university" className="text-white/60 hover:text-white text-sm transition-colors">For universities</a></li>  
+              </ul>
+            </div>
+
+            <div>
               <h4 className="text-white font-lufga mb-4 text-sm">Company</h4>
               <ul className="space-y-2">
-                <li><a href="https://www.zexsoft.eu" className="text-white/60 hover:text-white text-sm transition-colors">About</a></li>
+                <li><a href="https://www.zexsoft.eu" className="text-white/60 hover:text-white text-sm transition-colors">About Zexsoft</a></li>
+                <li><a href="https://www.zexsoft.eu/privacy-policy" className="text-white/60 hover:text-white text-sm transition-colors">Privacy Policy</a></li>
+                <li><a href="https://www.zexsoft.eu/terms-of-service" className="text-white/60 hover:text-white text-sm transition-colors">Terms of Service</a></li>
               </ul>
             </div>
           </div>

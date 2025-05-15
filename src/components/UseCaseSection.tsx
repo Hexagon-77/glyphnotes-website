@@ -6,19 +6,19 @@ const useCases = [
   {
     title: "For Students",
     description: "Take interactive notes during lectures, organize study materials, and collaborate with classmates on group projects. Convert handwritten notes to digital format instantly.",
-    image: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+    image: "https://images.unsplash.com/photo-1553861542-15283bc1bcd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
     color: "turquoise"
   },
   {
     title: "For Professors",
-    description: "Create interactive learning materials and lecture notes, grade assignments with detailed feedback, and collaborate with other educators in real-time.",
-    image: "https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+    description: "Create interactive learning materials and lecture notes in minutes - not days, teach collaboratively with your students, and work with other educators in real-time.",
+    image: "https://images.unsplash.com/photo-1587691592099-24045742c181??ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     color: "lightblue"
   },
   {
     title: "For Researchers",
-    description: "Document research findings with interactive models, organize complex data sets, and collaborate across institutions on breakthrough research projects.",
-    image: "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+    description: "Document research findings with interactive models, organize complex data sets, and collaborate across institutions on breakthrough research projects. Export directly to TeX or PDF - with IEEE, ACM, or APA citation styles.",
+    image: "https://images.unsplash.com/photo-1537202108838-e7072bad1927?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
     color: "lavender"
   }
 ];
@@ -34,7 +34,7 @@ const UseCaseSection = () => {
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-xl text-gradient font-lufga uppercase tracking-wider mb-4">Use Cases</h2>
+          <h2 className="text-xl text-gradient font-lufga uppercase tracking-wider mb-4">Use cases</h2>
           <h3 className="text-2xl md:text-3xl lg:text-4xl font-montserrat font-extrabold max-w-2xl mx-auto">
             Designed for <span className="text-gradient">everyone</span> in STEM
           </h3>
@@ -60,8 +60,13 @@ const UseCaseSection = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <Button className="bg-gradient-to-r from-turquoise to-lightblue hover:opacity-90 text-black font-medium text-lg px-8 py-6">
-            Start using Glyph Notes
+          <Button className="bg-gradient-to-r from-turquoise to-lightblue hover:opacity-90 text-black font-medium text-lg px-8 py-6"
+            onClick={() => {
+              const encodedEmail = 'Y29udGFjdEB6ZXhzb2Z0LmV1';
+              const decodedEmail = atob(encodedEmail);
+              window.location.href = `mailto:${decodedEmail}?subject=Glyph Notes - Let's chat`;
+            }}>
+            Let's chat
           </Button>
         </div>
       </div>

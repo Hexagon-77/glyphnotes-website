@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src="/media/logo.png" alt="Glyph Notes Logo" className="w-8 h-8" />
+          <img src="/media/logo.svg" alt="Glyph Notes Logo" className="w-8 h-8" />
           <div className="flex items-center">
             <span className="text-white text-xl font-raleway font-thin">glyph</span>
             <span className="text-white text-xl font-montserrat font-semibold ml-1">notes</span>
@@ -35,7 +35,7 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           <a href="#features" className="text-white/80 hover:text-white transition-colors text-sm font-raleway">Features</a>
-          <a href="#use-cases" className="text-white/80 hover:text-white transition-colors text-sm font-raleway">Use Cases</a>
+          <a href="#use-cases" className="text-white/80 hover:text-white transition-colors text-sm font-raleway">Use cases</a>
           <a href="#university" className="text-white/80 hover:text-white transition-colors text-sm font-raleway">For universities</a>
         </nav>
         
@@ -49,7 +49,7 @@ const Navbar = () => {
           <div className="absolute top-full left-0 right-0 glass-dark p-4 md:hidden">
             <nav className="flex flex-col space-y-4">
               <a href="#features" className="text-white/80 hover:text-white transition-colors text-sm font-raleway">Features</a>
-              <a href="#use-cases" className="text-white/80 hover:text-white transition-colors text-sm font-raleway">Use Cases</a>
+              <a href="#use-cases" className="text-white/80 hover:text-white transition-colors text-sm font-raleway">Use cases</a>
               <a href="#university" className="text-white/80 hover:text-white transition-colors text-sm font-raleway">For universities</a>
             </nav>
           </div>
